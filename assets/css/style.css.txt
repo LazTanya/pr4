@@ -1,0 +1,139 @@
+body {
+   font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+	width: 100%; /* ширина буде у всю ширину батьківського елементу */
+	max-width: 1180px; /* максимальна ширина */
+	margin: 30px 0 auto; /* для розміщення по центру */
+	display: flex; /* буде контейнером для всіх елементів шапки */
+	justify-content: space-between; /* рівномірно розподіляє всі елементи по ширині flex-блоку. Перший елемент спочатку, останній в кінці(дивимось підказку по flexbox з лекції)*/
+	align-items: center; /* вирівнюємо елементу за центром */
+	box-sizing: border-box; /* ширина border не додається в ширину елементу */
+  }
+
+.nav {
+   		display: flex;
+   		list-style-type: none; /* прибираємо вигляд списку за замовчування */
+   		justify-content: flex-start;
+   		font-size: 14px; 
+align-items: center;
+}
+	
+	.nav>li{
+   	margin-left: 15px; /* всім дочірнім елементам класу nav відступ праворуч 15px*/
+}
+
+.nav>li>a{
+   text-decoration: none;
+   color: #202020;
+   font-weight: 700;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+.logo img {
+   display: block;
+   width: 100px;
+   height: 100px;
+}
+
+.logo span {
+   font-size: 24px;
+   color: #202020;
+   font-weight: 700;
+}
+
+.nav .button {
+   background: x/*колір фону*/;
+   border-radius: x/*радіус*/;
+   color: x/*колір шрифта*/;
+   font-weight: x/**/;
+   padding: 5px 15px;
+   border: none;
+}
+
+.page-top {
+   border-top: 1px solid #C2C2C2;
+}
+
+.page{
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+
+.wrap{
+   width: 100%;
+   max-width: 1180px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+.page{
+   padding-top: 60px;
+   padding-bottom: 60px;
+   position: relative;
+}
+
+.page h2 {
+   position: absolute;
+   font-size: x;
+   font-weight: x;
+   color: x;
+   top: -20px; /* це значення підберіть використовуючи dev tools */
+   background: x;
+   padding: 0 20px;
+}
+
+.page .button{
+	background: #x;
+	border-radius: x;
+	color: #x;
+	padding: x x;
+	font-weight: x;
+	font-size: x;
+	border: x;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.page h1 {
+	font-size: x;
+	color: #x;
+            font-weight: x;
+
+	}
+	.page .hero-text{
+            width: x;
+            font-size: x;
+            color: #x;
+            font-weight: x;
+	line-height: x;/* висота міжрядкового інтервалу, беремо з фігми*/
+}
+	
+.departments{
+   display: grid;
+   grid-template-rows: 50% 50%;
+   grid-template-columns: 50% 50%;
+   grid-row-gap: 20px; /*простір між рядками*/
+}
+
+.dep-item {
+   display: flex;
+   justify-content: flex-start;
+ align-items: center;
+}
+
+
+.dep-item .img{
+   flex-basis: 140px; /* базовий розмір флекс елементу */
+   text-align: center;
+}
+
+
+.dep-item .text{
+   flex-basis: calc(100% - 140px); /* розміри в css можна обчислювати за допомоги функцій calc*/
+}
